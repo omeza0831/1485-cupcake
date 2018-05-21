@@ -13,11 +13,10 @@
 <body>
 	
 <header>
-	<div id="bg white">
+	<div id="bg-white">
 		<nav class="wrapper">
 			<ul>
 				<li><a href="#">Home</a></li>
-				          <!-- before you put any CSS in, be sure to link up the nav so that you can utilize these IDs for styling purposes -->
 				<li><a href="#about">About</a></li>
 				<li><h1><a href="#"><img src="img/header-logo.png" alt="real authentic fake cupcake company, logo"></a> </h1></li>
 				<li><a href="#products">Products</a></li>
@@ -66,32 +65,35 @@
 <div class="bg-blue">  <!-- classes could be replaced once IDs are put in for the nav -->
 	<section class="wrapper">
 		<header>
-			<h2 id="products">our treats</h2>
+			<h2>our treats</h2>
 			<p>We have something for every craving, celebration and occasion. We also offer several allergen free options.</p>
 		</header>
 		<div class="row">
 			<section class="col">
+				<div></div> <!-- turn div into circle put background shorthand to put color on div -->
 				<header>
 					<h3>signature cupcakes</h3>
 				</header>
 				<p>Caramels marshmallow jelly-o cotton candy ice cream I love cotton candy chocolate bar fruitcake. </p>
-				<p><a href="#"></a></p>
+				<p><a href="#">order now</a></p>
 			</section>
 			
 			<section class="col">
+				<div></div>
 				<header>
 					<h3>allergen free</h3>
 				</header>
 				<p>Topping pudding candy canes dragée. Lemon drops chupa chups gingerbread. Jelly topping apple pie cake pie icing chocolate bar fruitcake oat cake. </p>
-				<p><a href="#"></a></p>
-			</section> <!-- missing text --> 
+				<p><a href="#">order now</a></p>
+			</section>
 			
 			<section class="col">
+				<div></div>
 				<header>
 					<h3>vegan</h3>
 				</header>
 				<p>Pastry halvah gummi bears chupa chups I love. Macaroon pastry chocolate cake oat cake I love soufflé chocolate I love</p>
-				<p><a href="#"></a></p>
+				<p><a href="#">order now</a></p>
 			</section>
 		</div>
 	</section>
@@ -101,7 +103,7 @@
 	<h2>daily flavors</h2>
 	<div class="row">
 		<section>
-			<header></header>
+			<header>
 				<h3>Wedding Cake</h3>
 			</header>
 			<p>White Cake frosted with white buttercream and topped with wedding day sprinkles and a rose ornament.</p>
@@ -162,47 +164,49 @@
 		<table>
 			<caption></caption>
 			<thead>
-				   <!-- missing tr. utilize colspans, remove empty cells -->
-				<th>prices</th>
+				<tr>
+					<th>prices</th>
+					<th>prices</th>
+					<th>prices</th>
+					<th>prices</th>
+				</tr>
 			</thead>
 
 			<tbody>
-			<tr>
-				<td>Mini</td>
-				<td>$1.25</td>
-				<td>$13.00</td>
-				<td>$2.00 off</td>
-			</tr>
-			<tr>
-				<td>Regular</td>
-				<td>$2.50</td>
-				<td>$27.50</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>Jumbo</td>
-				<td>$3.50</td>
-				<td>$38.50</td>
-				<td></td>
-			</tr>
+				<tr>
+					<td>Mini</td>
+					<td>$1.25</td>
+					<td>$13.00</td>
+					<td>$2.00 off</td>
+				</tr>
+				<tr>
+					<td>Regular</td>
+					<td>$2.50</td>
+					<td>$27.50</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Jumbo</td>
+					<td>$3.50</td>
+					<td>$38.50</td>
+					<td></td>
+				</tr>
 		</tbody>
 		</table>
 		
 		<form class="row">
 			<div class="col">
 				<label for="first-name">first name</label>
-				<input id="first-name" type="first-name" name="first-name">
+				<input id="first-name" type="text" name="first-name">
 
 				<label for="last-name">last name</label>
-				<input id="last-name" type="last-name" name="last-name">
+				<input id="last-name" type="text" name="last-name">
 
 				<label for="phone">phone</label>
-				<input id="phone" type="phone" name="phone">
-				      <!-- incorrect type, be sure to validate -->
+				<input id="phone" type="tel" name="phone">
 
-				<label for="email-address">email address</label>
-				<input id="email-address" type="email-address" name="email-address">
-				      <!-- incorrect type, be sure to validate -->
+				<label for="email">email address</label>
+				<input id="email" type="email" name="email-address">
 
 				<p> special requests</p>
 				<textarea name="special-requests" rows="10" cols="50"></textarea>
@@ -212,14 +216,14 @@
 			<p>occasion</p>
 
 			<select name="occasion"> 
-			<optgroup>
-				<option value="just-want-some-cupcakes">my life</option>
-				<option value="wedding">wedding</option>
-				<option value="birthday">birthday</option>
-				<option value="party">party</option>
-				<option value="holiday">holiday</option>
-				<option value="other">other</option>
-			</optgroup>
+				<optgroup label="">
+					<option value="just-want-some-cupcakes">my life</option>
+					<option value="wedding">wedding</option>
+					<option value="birthday">birthday</option>
+					<option value="party">party</option>
+					<option value="holiday">holiday</option>
+					<option value="other">other</option>
+				</optgroup>
 			</select>
 
 			<p>quantity</p>
@@ -241,7 +245,7 @@
 			</div>
 
 			<fieldset class="row">
-			<!-- checkboxes -->
+
 			<legend>flavor</legend>
 
 			<div class="col">
@@ -309,7 +313,7 @@
 		
 		<section>
 			<h4>Our Location</h4>
-			<p>123 Fake Street #101 Fakersville, FA 12345</p>
+			<p>123 Fake Street #101 Fakersville, FA 12345</p>
 		</section>
 		
 		<section>
