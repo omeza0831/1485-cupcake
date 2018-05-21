@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.row {
+	overflow: auto;
+}
