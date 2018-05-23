@@ -5,6 +5,10 @@
 	
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 	
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+	
+<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
+	
 <link rel="stylesheet" type="text/css" href="css/main.css">
 	
 <title>Assignment 4</title>
@@ -24,25 +28,27 @@
 			</ul>
 		</nav>
 	</div>
-	<div>
-		<div class="wrapper">
-			<p><a href="#">try our signature cupcake</a></p>
+	<div id="bg-cupcake">
+		<div>
+			<div class="wrapper">
+				<p><a href="#">try our signature cupcake</a></p>
+			</div>
 		</div>
 	</div>
 </header>
 
-<div class="wrapper">
+<div class="wrapper" id="about">
 	<div> <!-- put a width on this shit -->
 		<p>specialty bakery dedicated to crafting and baking several different sweet treats.</p>
 	</div>
-	<div class="row>">
+	<div class="row">
 		<div>
 			<p><img src="img/about-cupcake.png" alt=""></p>
 		</div>
 		
 		<section>
 			<header>
-				<h2 id="about">about us</h2>
+				<h2>about us</h2>
 			</header>
 			<p>We offer cupcakes in three sizes: Jumbo Gourmet (filled), Regular &amp; Mini. Plus, we make Cakes, Cake Balls/Pops, Brownie Shots and several other sweet treats!</p>
 			<p>We are open 7 days a week, beginning Sunday at 11 am till 4 pm. Monday through Friday 8 am till 7 pm, and Saturday 10 am to 5 pm.</p> 
@@ -62,7 +68,7 @@
 	</div>
 </div>
 	
-<div class="bg-blue">  <!-- classes could be replaced once IDs are put in for the nav -->
+<div id="our-treats">  <!-- classes could be replaced once IDs are put in for the nav -->
 	<section class="wrapper">
 		<header>
 			<h2>our treats</h2>
@@ -70,7 +76,7 @@
 		</header>
 		<div class="row">
 			<section class="col">
-				<div></div> <!-- turn div into circle put background shorthand to put color on div -->
+				<div><img src="img/product-cupcake-1.png" alt=""></div> <!-- turn div into circle put background shorthand to put color on div -->
 				<header>
 					<h3>signature cupcakes</h3>
 				</header>
@@ -79,7 +85,7 @@
 			</section>
 			
 			<section class="col">
-				<div></div>
+				<div><img src="img/product-cupcake-2.png" alt=""></div>
 				<header>
 					<h3>allergen free</h3>
 				</header>
@@ -88,7 +94,7 @@
 			</section>
 			
 			<section class="col">
-				<div></div>
+				<div><img src="img/product-cupcake-3.png" alt=""></div>
 				<header>
 					<h3>vegan</h3>
 				</header>
@@ -99,8 +105,10 @@
 	</section>
 </div>
 	
-<section class="wrapper">
-	<h2>daily flavors</h2>
+<section id="daily-flavors" class="wrapper">
+	<header>
+		<h2>daily flavors</h2>
+	</header>
 	<div class="row">
 		<section>
 			<header>
@@ -155,14 +163,14 @@
 	</div>
 </section>
 	
-<div class="bg-blue">
+<div id="place-order" class="bg-blue">
 	<div class="wrapper">
 		<header>
 			<h2>place order</h2>
 			<p>Time limits for orders are 48 hours; please wait for a confirmation email to verify your order.</p>
 		</header>
 		<table>
-			<caption></caption>
+			<caption>prices table</caption>
 			<thead>
 				<tr>
 					<th>prices</th>
@@ -216,14 +224,12 @@
 			<p>occasion</p>
 
 			<select name="occasion"> 
-				<optgroup label="">
-					<option value="just-want-some-cupcakes">my life</option>
-					<option value="wedding">wedding</option>
-					<option value="birthday">birthday</option>
-					<option value="party">party</option>
-					<option value="holiday">holiday</option>
-					<option value="other">other</option>
-				</optgroup>
+				<option value="just-want-some-cupcakes">my life</option>
+				<option value="wedding">wedding</option>
+				<option value="birthday">birthday</option>
+				<option value="party">party</option>
+				<option value="holiday">holiday</option>
+				<option value="other">other</option>
 			</select>
 
 			<p>quantity</p>
@@ -313,7 +319,7 @@
 		
 		<section>
 			<h4>Our Location</h4>
-			<p>123 Fake Street #101 Fakersville, FA 12345</p>
+			<p>123 Fake Street #101<br> Fakersville, FA 12345</p>
 		</section>
 		
 		<section>

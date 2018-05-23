@@ -1,6 +1,11 @@
 @charset "UTF-8";
 /* CSS Document */
 
+* {
+	font-family: 'Comfortaa', sans-serif;
+
+}
+
 .wrapper {
 	width: 1170px;
 	margin: 0 auto;
@@ -9,3 +14,366 @@
 .row {
 	overflow: auto;
 }
+
+#bg-cupcake {
+	background: url(../img/bg-cupcake.png) no-repeat;
+	background-size: cover;
+	padding-top: 5px;
+}
+
+#bg-cupcake p {
+	margin: 450px 0 0 300px;
+	padding: 30px 0 20px 0;
+}
+
+#bg-cupcake p a {
+	font-size: 32px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000;
+}
+
+#bg-cupcake div:hover {
+	background-color: #79cfbc;
+}
+
+#bg-cupcake div:hover a {
+	color: #fff;
+}
+
+#bg-white {
+	background-color: #fff;
+}
+
+nav {
+	text-align: center;
+}
+
+nav li a {
+	text-decoration: none;
+	padding: 25px;
+	color: #442920;
+}
+
+nav li a:hover {
+	color: #79cfbc;
+}
+
+nav li:nth-child(3) {
+	vertical-align: middle;
+}
+
+#bg-cupcake > div {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+li {
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+
+/* section 1 */
+
+#about p:first-child {
+	color: #427d78;
+	font-size: 35px;
+	text-align: center;
+	width: 1000px;
+	text-transform: uppercase;
+	margin: 75px auto;
+}
+
+#about section {
+	margin: 0 25px;
+}
+
+#about img {
+	float: left;
+}
+
+#about section:first-of-type {
+	width: 500px;
+	float: left;
+}
+
+#about section:last-of-type {
+	margin-left: 100px;
+	float: left;
+}
+
+
+#about h2 {
+	font-size: 25px;
+	text-transform: uppercase;
+	color: #000;
+	text-align: left;
+	margin-bottom: 25px;
+}
+
+#about section p {
+	line-height: 30px;
+}
+
+#about section:first-of-type p {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 100;
+	font-size: 12pt;
+}
+
+/* section 2 */
+
+h2 {
+	font-size: 35px;
+	text-transform: uppercase;
+	color: #427d78;
+	text-align: center;
+}
+
+h3 {
+	font-size: 22px;
+	text-transform: uppercase;
+	color: #427d78;
+	display: inline;
+}
+
+#about p:nth-child(4) a:first-of-type {
+	color: #79cfbc;
+	text-decoration: none;
+	font-family: 'Roboto Slab', serif;
+}
+
+#about p:nth-child(4) a:first-of-type:hover {
+	color: #e9d089;
+	text-decoration: none;
+	font-family: 'Roboto Slab', serif;
+}
+
+#about p:last-child a:last-of-type, #our-treats .col:first-of-type a, #our-treats .col:nth-child(2) a, #our-treats .col:last-child a, #place-order p a {
+	background-color: #e9d089;
+	padding: 15px 25px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+#about p:last-child a:last-of-type:hover, #our-treats .col:first-of-type a:hover, #our-treats .col:nth-child(2) a:hover, #our-treats .col:last-child a:hover, #place-order p a:hover {
+	background-color: #79cfbc;
+	padding: 15px 25px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#about {
+	margin-bottom: 100px;
+}
+
+/* section 3 */
+#our-treats img {
+	height: 175px;
+	width: 175px;
+	background-color: #79cfbc;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+#our-treats, #place-order {
+	background-color: #e3e9e4;
+	padding: 50px 0;
+}
+
+#our-treats .col {
+	width: 300px;
+	line-height: 25px;
+	padding: 25px;
+}
+
+#our-treats header p, #place-order header p {
+	width: 475px;
+	line-height: 30px;
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+	margin: 25px auto;
+	font-weight: 300;
+}
+
+#our-treats .col:first-of-type p, #our-treats .col:nth-child(2) p, #our-treats .col:last-child p {
+	font-family: 'Roboto Slab', serif;
+	line-height: 35px;
+	font-weight: 300;
+}
+
+#our-treats .col:first-of-type {
+	float: left;
+	margin: 0;
+}
+
+#our-treats .col:nth-child(2) {
+	float: left;
+}
+
+#our-treats .col:last-child {
+	float: right;
+}
+
+#our-treats .col:first-of-type header, #our-treats .col:nth-child(2) header, #our-treats .col:last-child header {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#our-treats div img {
+	margin: 0 auto;
+}
+
+#our-treats .col:first-of-type a, #our-treats .col:nth-child(2) a, #our-treats .col:last-child a {
+	color: #fff;
+	background-color: #e9d089;
+}
+
+/* section 4 */
+#daily-flavors {
+	padding: 75px 0;
+}
+
+#daily-flavors .row section p {
+	float: left;
+	width: 260px;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	line-height: 30px;
+}
+
+#daily-flavors section {
+	display: inline-block;
+	margin: 25px 0;
+	font-size: 15px;
+}
+
+#daily-flavors h3 {
+	color: #000;
+	font-size: 15px;
+	text-transform: capitalize;
+}
+
+#daily-flavors .row section:nth-child(2), #daily-flavors .row section:nth-child(3), #daily-flavors .row section:last-child {
+	margin-left: 35px
+}
+
+/* section 5 */
+
+table {
+	margin: 75px auto;
+}
+
+caption {
+	display: none;
+}
+
+/* form */
+form {
+	padding: 50px 0;
+}
+
+form .col {
+	display: inline-block;
+}
+
+input[name="first-name"], input[name="last-name"], input[name="email-address"], input[name="phone"] {
+	display: block;
+}
+
+label, form p {
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #442920;
+}
+
+input[type="text"], input[type="email"], input[type="password"],input[name="phone"], textarea, select {
+    background-color: #f1f1f2;
+    border: 2px solid transparent;
+    width: 400px;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+label:nth-child(2), label:nth-child(3), label:last-child {
+	display: inline-block;
+}
+
+/* footer */
+footer {
+	background-color: #427d78; 
+}
+
+footer p {
+	font-size: 15px;
+	line-height: 25px;
+	margin: 5px 0;
+}
+
+footer section {
+	display: inline-block;
+	width: 325px;
+	color: #fff;
+	margin: 50px 0;
+}
+
+footer section:nth-child(2) {
+	margin-left: 200px;
+}
+
+footer h4 {
+	color: #79cfbc;
+	margin: 5px 0;
+}
+
+footer span {
+	display: none;
+}
+
+footer li a {
+	height: 20px;
+	width: 20px;
+}
+
+footer li:first-child a {
+	background: url("../img/sprite-facebook.png") no-repeat 0 0;
+}
+
+footer li:nth-child(2) a {
+	background: url("../img/sprite-twitter.png") no-repeat 0 0;
+}
+
+footer li:nth-child(3) a {
+	background: url("../img/sprite-pinterest.png") no-repeat 0 0;
+}
+
+footer li:nth-child(4) a {
+	background: url("../img/sprite-linkedin.png") no-repeat 0 0;
+}
+
+footer li:last-child a {
+	background: url("../img/sprite-google.png") no-repeat 0 0;
+}
+
+footer li a:hover {
+	background-position: 0 -20px;
+}
+
+
+
+
