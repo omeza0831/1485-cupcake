@@ -61,22 +61,24 @@
 			<header>
 				<h2>hours</h2>
 			</header>
-			<p>Monday - Friday <br> 8:00 AM - 7:00 PM</p>
-			<p>Saturday <br> 10:00 AM - 5:00 PM</p>
-			<p>Sunday <br> 11:00 AM - 4:00 PM</p>
+			<ul>
+				<li>Monday - Friday <br> 8:00 AM - 7:00 PM</li>
+				<li>Saturday <br> 10:00 AM - 5:00 PM</li>
+				<li>Sunday <br> 11:00 AM - 4:00 PM</li>
+			</ul>
 		</section>
 	</div>
 </div>
 	
-<div id="our-treats">  <!-- classes could be replaced once IDs are put in for the nav -->
-	<section class="wrapper">
+<section id="our-treats">  <!-- classes could be replaced once IDs are put in for the nav -->
+	<div class="wrapper">
 		<header>
 			<h2>our treats</h2>
 			<p>We have something for every craving, celebration and occasion. We also offer several allergen free options.</p>
 		</header>
 		<div class="row">
 			<section class="col">
-				<div><img src="img/product-cupcake-1.png" alt=""></div> <!-- turn div into circle put background shorthand to put color on div -->
+				<div class="circle"></div> <!-- turn div into circle put background shorthand to put color on div -->
 				<header>
 					<h3>signature cupcakes</h3>
 				</header>
@@ -85,7 +87,7 @@
 			</section>
 			
 			<section class="col">
-				<div><img src="img/product-cupcake-2.png" alt=""></div>
+				<div class="circle"></div>
 				<header>
 					<h3>allergen free</h3>
 				</header>
@@ -94,7 +96,7 @@
 			</section>
 			
 			<section class="col">
-				<div><img src="img/product-cupcake-3.png" alt=""></div>
+				<div class="circle"></div>
 				<header>
 					<h3>vegan</h3>
 				</header>
@@ -102,8 +104,8 @@
 				<p><a href="#">order now</a></p>
 			</section>
 		</div>
-	</section>
-</div>
+	</div>
+</section>
 	
 <section id="daily-flavors" class="wrapper">
 	<header>
@@ -232,23 +234,23 @@
 				<option value="other">other</option>
 			</select>
 
-			<p>quantity</p>
-			<div class="row">
-				<div>
+			<p id="quantity">quantity</p>
+			<section class="row">
+				<div class="col">
 					<label for="individual">individual</label>	
 					<input id="individual" type="radio" name="quantity" value="individual">
 				</div>
 					
-				<div>
+				<div class="col">
 					<label for="one-dozen">one dozen</label>	
 					<input id="one-dozen" type="radio" name="quantity" value="one-dozen">
 				</div>
 
-				<div>
+				<div class="col">
 					<label for="two-dozen">two dozen</label>	
 					<input id="two-dozen" type="radio" name="quantity" value="two-dozen">
 				</div>
-			</div>
+			</section>
 
 			<fieldset class="row">
 
@@ -285,19 +287,19 @@
 			</div>
 			</fieldset>
 
-			<p>type</p>
+			<p id="type">type</p>
 			<div class="row">
-				<div>
+				<div class="col">
 					<label for="signature-type">signature</label>	
 					<input id="signature-type" type="radio" name="type" value="signature-type">
 				</div>
 
-				<div>
+				<div class="col">
 					<label for="alergen-free">alergen free</label>	
 					<input id="alergen-free" type="radio" name="type" value="alergen-free">
 				</div>
 
-				<div>
+				<div class="col">
 					<label for="vegan">vegan</label>	
 					<input id="vegan" type="radio" name="type" value="vegan">
 				</div>
@@ -334,6 +336,10 @@
 		</section>
 	</div>
 </footer>
+	
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/functions.js"> </script> -->
 	
 </body>
 </html>
