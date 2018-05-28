@@ -31,7 +31,66 @@
 }
 
 /*----- 1.0 - Typography -----*/
-#bg-cupcake p a, #about p:first-child, #about h2, h2, h3, #about p:last-child a:last-of-type, #our-treats .col:first-of-type a, #our-treats .col:nth-child(2) a, #our-treats .col:last-child a, #place-order p a, #about p:last-child a:last-of-type:hover, #our-treats .col:first-of-type a:hover, #our-treats .col:nth-child(2) a:hover, #our-treats .col:last-child a:hover, #place-order p a:hover, label, form p, legend {
+#about p:first-child, nav, h2, #our-treats section:first-child p:last-child, #our-treats section:nth-child(2) p:last-child, #our-treats section:last-child p:last-child, #our-treats header p, #place-order header p, #our-treats .col:first-of-type header, #our-treats .col:nth-child(2) header, #our-treats .col:last-child header {
+	text-align: center;
+}
+
+#about h2, tr td, #about ul li, p {
+	text-align: left;
+}
+
+#about h2 {
+	font-size: 25px;
+	margin-bottom: 25px;
+}
+
+#about section:first-of-type p {
+	font-weight: 100;
+	font-size: 12pt;
+}
+
+#about section p {
+	line-height: 30px;
+}
+
+h3 {
+	font-size: 22px;
+	display: inline;
+}
+
+h2, #about p:first-child {
+	font-size: 35px;
+}
+
+#our-treats .col:first-of-type p, #our-treats .col:nth-child(2) p, #our-treats .col:last-child p {
+	line-height: 35px;
+}
+
+#daily-flavors .row section p {
+	line-height: 30px;
+}
+
+#our-treats .col:first-of-type p, #our-treats .col:nth-child(2) p, #our-treats .col:last-child p, #daily-flavors .row section p {
+	font-weight: 300;
+}
+
+#daily-flavors h3 {
+	text-transform: capitalize;
+}
+
+#bg-cupcake p a {
+	font-size: 32px;
+}
+
+#daily-flavors section, #daily-flavors h3, #about p:last-child a:last-of-type, #our-treats .col:first-of-type a, #our-treats .col:nth-child(2) a, #our-treats .col:last-child a, #place-order p a, footer p {
+	font-size: 15px;
+}
+
+#daily-flavors .row section p, #our-treats header p, #place-order header p, #about p:nth-child(4) a:first-of-type, #about p:nth-child(4) a:first-of-type:hover, #our-treats .col:first-of-type p, #our-treats .col:nth-child(2) p, #our-treats .col:last-child p, #about section:first-of-type p {
+	font-family: 'Roboto Slab', serif;
+}
+
+#bg-cupcake p a, #about p:first-child, #about h2, h2, h3, #about p:last-child a:last-of-type, #our-treats .col:first-of-type a, #our-treats .col:nth-child(2) a, #our-treats .col:last-child a, #place-order p a, #about p:last-child a:last-of-type:hover, #our-treats .col:first-of-type a:hover, #our-treats .col:nth-child(2) a:hover, #our-treats .col:last-child a:hover, #place-order p a:hover, label, form p, legend, th {
 	text-transform: uppercase;
 }
 
@@ -74,12 +133,12 @@ input[type="text"], input[type="email"], input[type="password"],input[name="phon
     margin: 10px 0;
 }
 
-label:nth-child(2), label:nth-child(3), label:last-child {
-	display: inline-block;
+#place-order p a {
+	margin-left: 150px;
 }
 
-#place-order .col:last-child {
-	float: right;
+label:nth-child(2), label:nth-child(3), label:last-child, form div:nth-child(3), footer section, nav li, footer li {
+	display: inline-block;
 }
 
 fieldset {
@@ -91,12 +150,10 @@ fieldset {
 
 form .col {
 	width: 585px;
-	float: left;
 }
 
 form .col .col {
 	width: 195px;
-	float: left;
 }
 
 #quantity, #type {
@@ -105,10 +162,6 @@ form .col .col {
 
 legend {
 	margin: 100px 0 20px 0;
-}
-
-form div:nth-child(3) {
-	display: inline-block;
 }
 
 /*----- 1.5 - Lists -----*/
@@ -127,6 +180,33 @@ table {
 	font-weight: 300;
 }
 
+table {
+	border-collapse: collapse;
+}
+
+/*----- 2.0 Navigation Menues -----*/
+nav li a {
+	padding: 25px;
+}
+
+nav li:nth-child(3) {
+	vertical-align: middle;
+}
+
+nav li, footer li {
+	list-style: none;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+
 /*----- 3.0 - Content -----*/
 
 /*----- 3.1 - Site Structure -----*/
@@ -134,11 +214,22 @@ caption {
 	display: none;
 }
 
+#our-treats section:first-child .circle {
+	background: #79cfbc url("../img/product-cupcake-1.png") no-repeat center;
+}
+
+#our-treats section:nth-child(2) .circle {
+	background: #79cfbc url("../img/product-cupcake-2.png") no-repeat center;
+}
+
+#our-treats section:last-of-type .circle {
+	background: #79cfbc url("../img/product-cupcake-3.png") no-repeat center;
+}
+
 /*----- 3.2	- Site Header -----*/
 #our-treats header p, #place-order header p {
 	width: 475px;
 	line-height: 30px;
-	font-family: 'Roboto Slab', serif;
 	margin: 25px auto;
 	font-weight: 300;
 }
@@ -147,13 +238,9 @@ caption {
 	margin: 0 auto;
 }
 
-/*----- 3.3	- Site Footer */
-footer {
-	background-color: #427d78; 
-}
+/*----- 3.3	- Site Footer -----*/
 
 footer p {
-	font-size: 15px;
 	line-height: 25px;
 	margin: 5px 0;
 	font-weight: 300;
@@ -180,7 +267,6 @@ footer span {
 footer li a {
 	height: 20px;
 	width: 20px;
-	float: left;
 	margin: 15px 0 0 30px;
 }
 
@@ -214,12 +300,28 @@ footer li a:hover {
 
 
 /*----- 5.2 - Colors -----*/
-label, form, p, nav li a, legend {
-	color: #442920;
+#about p:nth-child(4) a:first-of-type:hover {
+	color: #e9d089;
 }
 
-#bg-cupcake p a, #daily-flavors h3, #about h2 {
-	color: #000;
+#our-treats .col:first-of-type a, #our-treats .col:nth-child(2) a, #our-treats .col:last-child a, #about p:last-child a:last-of-type, #our-treats .col:first-of-type a, #our-treats .col:nth-child(2) a, #our-treats .col:last-child a, #place-order p a {
+	background-color: #e9d089;
+}
+
+th, h2, h3, #about p:first-child {
+	color: #427d78;
+}
+
+footer {
+	background-color: #427d78; 
+}
+
+#bg-cupcake > div {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+#bg-cupcake p a, #daily-flavors h3, #about h2, label, form, p, nav li a, legend {
+	color: #442920;
 }
 
 #bg-cupcake div:hover a, #bg-white, #about p:last-child a:last-of-type, #our-treats .col:first-of-type a, #our-treats .col:nth-child(2) a, #our-treats .col:last-child a, #place-order p a, #about p:last-child a:last-of-type:hover, #our-treats .col:first-of-type a:hover, #our-treats .col:nth-child(2) a:hover, #our-treats .col:last-child a:hover, #place-order p a:hover, #our-treats .col:first-of-type a, #our-treats .col:nth-child(2) a, #our-treats .col:last-child a, footer p, footer section {
@@ -235,14 +337,13 @@ footer h4, #about p:nth-child(4) a:first-of-type, nav li a:hover {
 }
 	
 /*----- 5.3 - Alignments -----*/
-#about p:first-child, nav, h2, #our-treats section:first-child p:last-child, #our-treats section:nth-child(2) p:last-child, #our-treats section:last-child p:last-child, #our-treats header p, #place-order header p, #our-treats .col:first-of-type header, #our-treats .col:nth-child(2) header, #our-treats .col:last-child header {
-	text-align: center;
+#our-treats .col:last-child, #place-order .col:last-child  {
+	float: right;
 }
 
-#about h2, tr td, #about ul li, p {
-	text-align: left;
+#about img, #about section:first-of-type, #about section:last-of-type, #our-treats .col:first-of-type, #our-treats .col:nth-child(2), #daily-flavors .row section, #place-order p a, footer li a, form .col, form .col .col  {
+	float: left;
 }
-
 
 .wrapper {
 	width: 1170px;
@@ -264,142 +365,44 @@ footer h4, #about p:nth-child(4) a:first-of-type, nav li a:hover {
 	padding: 30px 0 20px 0;
 }
 
-#bg-cupcake p a {
-	font-size: 32px;
-}
-
-nav li a {
-	padding: 25px;
-}
-
-nav li:nth-child(3) {
-	vertical-align: middle;
-}
-
-#bg-cupcake > div {
-	background-color: rgba(255, 255, 255, 0.5);
-}
-
-li {
-	list-style: none;
-	display: inline-block;
-}
-
-ul, menu, dir {
-    display: block;
-    list-style-type: disc;
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 0px;
-}
-
-/* section 1 */
-
-#about p:first-child {
-	color: #427d78;
-	font-size: 35px;
-	width: 1000px;
-	margin: 75px auto;
-}
-
 #about section {
 	margin: 0 25px;
 }
 
-#about img {
-	float: left;
+#daily-flavors section {
+	margin: 25px 0;
 }
 
-#about section:first-of-type {
-	width: 500px;
-	float: left;
+#daily-flavors .row section:nth-child(2), #daily-flavors .row section:nth-child(3), #daily-flavors .row section:last-child {
+	margin-left: 35px
 }
 
-#about section:last-of-type {
-	margin-left: 100px;
-	float: left;
+#daily-flavors {
+	padding: 200px 0;
 }
 
-#about li {
-	display: block;
+#daily-flavors .row section {
+	width: 260px;
 }
 
-
-#about h2 {
-	font-size: 25px;
-	margin-bottom: 25px;
+#our-treats .col:first-of-type {
+	margin: 0;
 }
 
-#about section p {
-	line-height: 30px;
-}
-
-#about section:first-of-type p {
-	font-family: 'Roboto Slab', serif;
-	font-weight: 100;
-	font-size: 12pt;
-}
-
-/* section 2 */
-
-h2 {
-	font-size: 35px;
-	color: #427d78;
-}
-
-h3 {
-	font-size: 22px;
-	color: #427d78;
-	display: inline;
-}
-
-#about p:nth-child(4) a:first-of-type {
-	font-family: 'Roboto Slab', serif;
-}
-
-#about p:nth-child(4) a:first-of-type:hover {
-	color: #e9d089;
-	font-family: 'Roboto Slab', serif;
-}
-
-#about p:last-child a:last-of-type, #our-treats .col:first-of-type a, #our-treats .col:nth-child(2) a, #our-treats .col:last-child a, #place-order p a {
-	background-color: #e9d089;
-	padding: 15px 25px;
-	font-size: 15px;
-}
-
-#about p:last-child a:last-of-type:hover, #our-treats .col:first-of-type a:hover, #our-treats .col:nth-child(2) a:hover, #our-treats .col:last-child a:hover, #place-order p a:hover {
-	padding: 15px 25px;
+#our-treats div img {
+	margin: 0 auto;
 }
 
 #about {
 	margin-bottom: 100px;
 }
 
-/* section 3 */
-.circle {
-	height: 175px;
-	width: 175px;
-	border-radius: 50%;
-	margin: 50px auto;
+#about section:first-of-type {
+	width: 500px;
 }
 
-#our-treats section:first-child .circle {
-	background: #79cfbc url("../img/product-cupcake-1.png") no-repeat center;
-}
-
-#our-treats section:nth-child(2) .circle {
-	background: #79cfbc url("../img/product-cupcake-2.png") no-repeat center;
-}
-
-#our-treats section:last-of-type .circle {
-	background: #79cfbc url("../img/product-cupcake-3.png") no-repeat center;
-}
-
-#our-treats section:nth-child(2) {
-	margin-left: 50px;
+#about section:last-of-type {
+	margin-left: 100px;
 }
 
 #our-treats section:first-child p:last-child {
@@ -410,9 +413,34 @@ h3 {
 	margin-top: 50px;
 }
 
+#our-treats section:nth-child(2) {
+	margin-left: 50px;
+}
+
 #our-treats, #place-order {
 	background-color: #e3e9e4;
 	padding: 50px 0;
+}
+
+#about p:last-child a:last-of-type:hover, #our-treats .col:first-of-type a:hover, #our-treats .col:nth-child(2) a:hover, #our-treats .col:last-child a:hover, #place-order p a:hover, #about p:last-child a:last-of-type, #our-treats .col:first-of-type a, #our-treats .col:nth-child(2) a, #our-treats .col:last-child a, #place-order p a {
+	padding: 15px 25px;
+}
+
+
+#about li {
+	display: block;
+}
+
+#about p:first-child {
+	width: 1000px;
+	margin: 75px auto;
+}
+
+.circle {
+	height: 175px;
+	width: 175px;
+	border-radius: 50%;
+	margin: 50px auto;
 }
 
 #our-treats .col {
@@ -420,63 +448,3 @@ h3 {
 	line-height: 25px;
 	padding: 25px;
 }
-
-#our-treats .col:first-of-type p, #our-treats .col:nth-child(2) p, #our-treats .col:last-child p {
-	font-family: 'Roboto Slab', serif;
-	line-height: 35px;
-	font-weight: 300;
-}
-
-#our-treats .col:first-of-type {
-	float: left;
-	margin: 0;
-}
-
-#our-treats .col:nth-child(2) {
-	float: left;
-}
-
-#our-treats .col:last-child {
-	float: right;
-}
-
-#our-treats div img {
-	margin: 0 auto;
-}
-
-#our-treats .col:first-of-type a, #our-treats .col:nth-child(2) a, #our-treats .col:last-child a {
-	background-color: #e9d089;
-}
-
-/* section 4 */
-#daily-flavors {
-	padding: 200px 0;
-}
-
-#daily-flavors .row section {
-	float: left;
-	width: 260px;
-}
-
-#daily-flavors .row section p {
-	font-family: 'Roboto Slab', serif;
-	font-weight: 300;
-	line-height: 30px;
-}
-
-#daily-flavors section {
-	margin: 25px 0;
-	font-size: 15px;
-}
-
-#daily-flavors h3 {
-	font-size: 15px;
-	text-transform: capitalize;
-}
-
-#daily-flavors .row section:nth-child(2), #daily-flavors .row section:nth-child(3), #daily-flavors .row section:last-child {
-	margin-left: 35px
-}
-
-
-
