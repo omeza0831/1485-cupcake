@@ -16,14 +16,14 @@
 
 <body>
 	
-<header>
+<header class="smooth-scroll">
 	<div id="bg-white">
 		<nav class="wrapper">
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#about">About</a></li>
 				<li><h1><a href="#"><img src="img/header-logo.png" alt="real authentic fake cupcake company"></a> </h1></li>
-				<li><a href="#products">Products</a></li>
+				<li><a href="#our-treats">Products</a></li>
 				<li><a href="#contact">Contact Us</a></li>
 			</ul>
 		</nav>
@@ -37,7 +37,7 @@
 	</div>
 </header>
 
-<div class="wrapper" id="about">
+<div class="wrapper smooth-scroll" id="about">
 	<div> <!-- put a width on this shit -->
 		<p>specialty bakery dedicated to crafting and baking several different sweet treats.</p>
 	</div>
@@ -70,7 +70,7 @@
 	</div>
 </div>
 	
-<section id="our-treats">  <!-- classes could be replaced once IDs are put in for the nav -->
+<section id="our-treats" class="smooth-scroll">  <!-- classes could be replaced once IDs are put in for the nav -->
 	<div class="wrapper">
 		<header>
 			<h2>our treats</h2>
@@ -165,7 +165,7 @@
 	</div>
 </section>
 	
-<div id="place-order" class="bg-blue">
+<div id="place-order" class="bg-blue smooth-scroll">
 	<div class="wrapper">
 		<header>
 			<h2>place order</h2>
@@ -232,73 +232,87 @@
 			</select>
 
 			<p id="quantity">quantity</p>
-			<section class="row">
+			<div class="row">
 				<div class="col">
-					<label for="individual">individual</label>	
-					<input id="individual" type="radio" name="quantity" value="individual">
+					<label>
+						<input type="radio" name="quantity" value="individual">individual
+					</label>
 				</div>
 					
 				<div class="col">
-					<label for="one-dozen">one dozen</label>	
-					<input id="one-dozen" type="radio" name="quantity" value="one-dozen">
+					<label>
+						<input type="radio" name="quantity" value="one-dozen">one dozen
+					</label>
 				</div>
 
 				<div class="col">
-					<label for="two-dozen">two dozen</label>	
-					<input id="two-dozen" type="radio" name="quantity" value="two-dozen">
+					<label>
+						<input type="radio" name="quantity" value="two-dozen">two dozen
+					</label>
 				</div>
-			</section>
+			</div>
 
 			<fieldset class="row">
 
 			<legend>flavor</legend>
 
 			<div class="col">
-				<label for="wedding-cake">wedding cake</label>
-				<input id="wedding-cake" type="checkbox" name="flavor" value="text">
+				<label>
+					<input type="checkbox" name="flavor" value="text">wedding cake
+				</label>
 
-				<label for="go-big-red">go big red</label>
-				<input id="go-big-red" type="checkbox" name="flavor" value="text">
+				<label>
+					<input type="checkbox" name="flavor" value="text">go big red
+				</label>
 
-				<label for="signature">signature</label>
-				<input id="signature" type="checkbox" name="flavor" value="text">
+				<label>
+					<input type="checkbox" name="flavor" value="text">signature
+				</label>
 			</div>
 
 			<div class="col">
-				<label for="the-tuxed">the tuxed</label>
-				<input id="the-tuxed" type="checkbox" name="flavor" value="text">
+				<label>
+					<input type="checkbox" name="flavor" value="text">the tuxed
+				</label>
 
-				<label for="pb-cup">pb cup</label>
-				<input id="pb-cup" type="checkbox" name="flavor" value="text">
+				<label>
+					<input type="checkbox" name="flavor" value="text">pb cup
+				</label>
 
-				<label for="chocolate-lovers">chocolate lovers</label>
-				<input id="chocolate-lovers" type="checkbox" name="flavor" value="text">
+				<label>
+					<input type="checkbox" name="flavor" value="text">chocolate lovers
+				</label>
 			</div>
 
 			<div class="col">
-				<label for="princess">princess</label>
-				<input id="princess" type="checkbox" name="flavor" value="text">
+				<label>
+					<input type="checkbox" name="flavor" value="text">princess
+				</label>
 
-				<label for="cookies-and-cream">cookies &amp; cream</label>
-				<input id="cookies-and-cream" type="checkbox" name="flavor" value="text">
+				<label>
+					<input type="checkbox" name="flavor" value="text">cookies &amp; cream
+				</label>
 			</div>
 			</fieldset>
 
 			<p id="type">type</p>
 			<div class="row">
 				<div class="col">
-					<label for="signature-type">signature</label>	
-					<input id="signature-type" type="radio" name="type" value="signature-type">
+					<label>
+						<input type="radio" name="type" value="signature-type">signature
+					</label>
 				</div>
 
 				<div class="col">
-					<label for="alergen-free">alergen free</label>	
-					<input id="alergen-free" type="radio" name="type" value="alergen-free">
+					<label>
+						<input type="radio" name="type" value="alergen-free-type">alergen free
+					</label>
 				</div>
 
 				<div class="col">
-					<label for="vegan">vegan</label>	
-					<input id="vegan" type="radio" name="type" value="vegan">
+					<label>
+						<input type="radio" name="type" value="vegan-type">vegan
+					</label>
 				</div>
 			</div>
 

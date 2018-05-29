@@ -99,8 +99,9 @@ h2, #about p:first-child {
 }
 
 /*----- 1.4 - Forms -----*/
+
 form {
-	padding: 50px 0;
+	padding: 25px 0;
 }
 
 input[name="first-name"], input[name="last-name"], input[name="email-address"], input[name="phone"] {
@@ -130,14 +131,18 @@ input[type="text"], input[type="email"], input[type="password"],input[name="phon
     border: 2px solid transparent;
     width: 400px;
     padding: 8px;
-    margin: 10px 0;
+    margin: 10px 0 35px 0;
 }
 
 #place-order p a {
 	margin-left: 150px;
 }
 
-label:nth-child(2), label:nth-child(3), label:last-child, form div:nth-child(3), footer section, nav li, footer li {
+label {
+	display: block;
+}
+
+footer section, nav li, footer li {
 	display: inline-block;
 }
 
@@ -157,7 +162,7 @@ form .col .col {
 }
 
 #quantity, #type {
-	margin: 50px 0 20px 0;
+	margin: 35px 0 20px 0;
 }
 
 legend {
@@ -169,7 +174,7 @@ legend {
 	line-height: 35px;
 	font-size: 12pt;
 	font-weight: 300;
-	list-style-image: url(../img/list-bullet.png)
+	list-style-image: url(../img/list-bullet.png);
 }
 
 /*----- 1.6 - Tables -----*/
@@ -189,12 +194,8 @@ nav li a {
 	padding: 25px;
 }
 
-nav li:nth-child(3) {
+nav li {
 	vertical-align: middle;
-}
-
-nav li, footer li {
-	list-style: none;
 }
 
 ul, menu, dir {
@@ -424,11 +425,6 @@ footer h4, #about p:nth-child(4) a:first-of-type, nav li a:hover {
 
 #about p:last-child a:last-of-type:hover, #our-treats .col:first-of-type a:hover, #our-treats .col:nth-child(2) a:hover, #our-treats .col:last-child a:hover, #place-order p a:hover, #about p:last-child a:last-of-type, #our-treats .col:first-of-type a, #our-treats .col:nth-child(2) a, #our-treats .col:last-child a, #place-order p a {
 	padding: 15px 25px;
-}
-
-
-#about li {
-	display: block;
 }
 
 #about p:first-child {

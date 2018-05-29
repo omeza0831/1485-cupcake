@@ -2,25 +2,37 @@
 
 
 jQuery(document).ready(function($){
-	
-	// Smooth scroll home nav
-		$('.smooth-scroll').on('click', 'a', function(e) {
-			// prevent default anchor click behavior
-   			e.preventDefault();
+
+		"use strict";	
+
+		$('.smooth-scroll').on('click', 'a', function(e) {		
+
+			e.preventDefault();
+
 		
-		   // store hash
-		   var hash = this.hash;
+
+			var hash = this.hash;
+
+		   
+
+			var target_offset = $(this.hash).offset() ? $(this.hash).offset().top : 0;
+
 			
-			$('html, body').animate({
-			   scrollTop: $(this.hash).offset().top-38
-			 }, 1000, function(){
-		
-			   // when done, add hash to url
-			   // (default click behaviour)
-			   window.location.hash = hash;
-			 });
-		
-		});
+
+			//change this number to create the offset        
+
+			var customoffset = 50;
+
+			
+
+			//change this number to change the duration of the scroll 
+
+			$('html, body').animate({scrollTop:target_offset - customoffset}, 500);
 
 	
+
+			window.location.hash = hash;	
+
+		});
+
 });
